@@ -19,23 +19,25 @@ body {
   .card-container .card-detail{
     min-width: 150px;
     border-radius: 0px 75px 0px 0px;
-    left: 0px;
     z-index: 1;
-    background-color:  #d1cece;
+    background: rgb(209,209,209);
+    background: linear-gradient(0deg, rgba(209,209,209,1) 18%, rgb(160 147 107) 100%, 100%, rgb(55 55 55) 100%);
+    box-shadow: 0px 0px 10px;
   }
   .card-container .card-detail h2{
     padding: 20px;
     font-size: 35px;
+    font-family: system-ui;
   }
   .card-container .card-detail p{
     padding: 22px;
   }
   .card-container .card-detail p .name{
-    background-color: darkgrey;
+    background: rgba(82,75,53,1);
     padding: 2px;
     border-radius: 7px;
     font-weight: bold;
-    color: aliceblue;
+    color: rgb(202 202 202);
   }
   .card-container .card-detail .muted-text{
     padding: 22px;
