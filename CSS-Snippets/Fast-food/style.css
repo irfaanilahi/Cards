@@ -1,0 +1,77 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #363636;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 300px;
+    height: auto;
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card .card-image {}
+
+.card .card-image img {
+    width: 100%;
+}
+
+.card .card-content {
+    color: aliceblue;
+    position: absolute;
+    bottom: 4px;
+    padding: 17px 20px 17px 20px;
+    background: linear-gradient(hsl(0 0% 0% /0), hsl(20 0% 0% /0.5) 20%, hsl(0 0% 0% /0.7));
+    width: -webkit-fill-available;
+    transform: translateY(62%);
+    transition: transform 500ms ease;
+    text-align: center;
+}
+.card:hover .card-content{
+    transform: translateY(0);
+}
+.card .card-content span {
+    font-size: 17px;
+    font-weight: 700;
+    color: #f38f00;
+}
+
+.card .card-content p {
+    padding-bottom: 8px;
+    font-size: 12px;
+    color: #a7a7a7;
+}
+
+.card .card-content a {
+    text-decoration: none;
+    background-color: #bc6f00;
+    color: black;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 1px 20px;
+    margin-bottom: 5px;
+}

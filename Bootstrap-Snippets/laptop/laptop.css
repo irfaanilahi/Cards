@@ -1,0 +1,27 @@
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #eeeeee;
+}
+.card .card-image{
+    margin-bottom: 20px;
+}
+.card .card-image img{
+    width: 100%;
+    max-height: 70vh;
+}
+.card .card-text{
+text-align: center;
+}
+.card .card-text h2{
+    margin-bottom: 20px;
+}
+.card .card-button{
+    text-align: center;
+}
+.card .card-button a{
+    margin-bottom: 20px;
+    padding: 8px 45px;
+}
+.card .card-button a:hover{
+    font-weight: 700;
+}

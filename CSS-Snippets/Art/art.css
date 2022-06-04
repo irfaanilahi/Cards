@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card {
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card .card-image img {
+    width: 100%;
+}
+
+.card .card-image {}
+
+.card .card-text {
+    padding-bottom: 25px;
+    padding: 10px 0px 20px 28px;
+
+}
+
+.card .card-text h1 {
+    font-size: 40px;
+    font-family: system-ui;
+    color: #5e5e5e;
+    padding-bottom: 12px;
+}
+
+.card .card-text p {
+    padding-bottom: 10px;
+}
+
+.card .card-button {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card .card-button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 2px 35px;
+    font-size: 20px;
+    border-radius: 3px;
+    font-family: monospace;
+    border: 1px solid grey;
+    box-shadow: rgb(173 173 173 / 0%) 3px 3px 6px 0px inset, rgb(203 203 203) 3px 3px 6px 0px inset;
+    font-weight: bold;
+    transition: all ease-in 0.2s;
+}
+
+.card .card-button a:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: white;
+    transform: rotateX(10deg)
+}

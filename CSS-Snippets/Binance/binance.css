@@ -3,9 +3,6 @@
 }
 
 body {
-    height: 100vh;
-    filter: blur(0.5px);
-    background: rgb(61, 61, 61);
     background: linear-gradient(177deg, rgb(27 27 27) 49%, rgb(25 25 25) 60%);
 }
 
@@ -24,9 +21,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     transition: all ease-in 0.2s;
-    position: absolute;
-    bottom: 25%;
-    right: 25%;
 }
 
 /* .background-text:hover {

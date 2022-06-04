@@ -1,0 +1,65 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main-container > .card-container{
+    width: 300px;
+    height: auto;
+}
+
+/* Card Styles */
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card .card-image {
+    max-height: 400px;
+}
+.card .card-image img{
+    width: 100%;
+    vertical-align: middle;
+}
+.card .card-info {
+    padding: 1rem;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.card .card-info p {
+    font-size: 0.83rem;
+    color: gray;
+}
+.card .card-button {
+    display: inline-flex;
+    margin-top: 1rem;
+}
+
+.card .card-button a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100rem;
+}
