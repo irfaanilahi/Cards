@@ -1,0 +1,64 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    background-color: rgb(68, 68, 68);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main-container > .card-container{
+    width: 300px;
+    height: auto;
+}
+.card{
+position: relative;
+}
+.card .card-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px outset rgb(135 151 255);
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+.card:hover .card-image{
+    transform: translateX(180px);
+}
+.card .card-image img{
+    width: 100%;
+    
+}
+.card .card-content{
+    background: linear-gradient(90deg, rgb(0 99 59) 0%, rgb(176 194 204) 89%);
+    position: absolute;
+    top: 4px;
+    z-index: 0;
+    /* width: -webkit-fill-available; */
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px 70px 20px 70px;
+}
+.card .card-content a{
+    padding-left: 7px;
+    text-decoration: none;
+    color: #393535;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.card:hover .card-content a{
+font-size: 17px;
+color: rgb(245, 245, 245);
+padding-left: 0px;
+}

@@ -1,16 +1,24 @@
+/* Card Template Styles */
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
-.card-wrapper {
-    display: flex;
-    justify-content: space-around;
+html, body {
+    height: 100%;
+    background-color: rgb(29, 29, 29);
 }
 
-.card-body {
-    padding: 1rem;
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main-container > .card-container{
+    width: 300px;
+    height: auto;
 }
 
 .card {
@@ -19,19 +27,21 @@
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 0%) 0px 3px 6px, rgb(0 0 0 / 19%) 0px 3px 6px;
     position: relative;
-    transition: ease 0.2s;
     overflow: hidden;
+    background-color: #efefef;
 }
 
-.card:hover {
+/* .card:hover {
     box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 40%) 0px 3px 6px;
-    transform: scale(1.02);
-}
+} */
 
 .card .card-image img {
     width: 100%;
+    transition: ease 0.2s;
 }
-
+.card:hover .card-image img{
+    transform: scale(1.04);
+}
 .card .card-content {
     position: relative;
     padding: 20px 28px 10px 28px;
@@ -47,8 +57,8 @@
 
 .card .card-content h2 {
     font-size: 20px;
-    color: #78675a;
-    padding-bottom: 12px;
+    color: #a05652;
+    padding-bottom: 10px;
 }
 
 .card .card-content h2::after {
@@ -56,7 +66,7 @@
     width: 40px;
     height: 2px;
     display: block;
-    background-color: #757575;
+    background-color: #a05652;
     transform: scaleX(0);
     transition: all ease 0.2s;
     transform-origin: left;
