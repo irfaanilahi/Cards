@@ -7,7 +7,7 @@
 }
 html, body {
     height: 100%;
-    background-color: rgb(68, 68, 68);
+    background: radial-gradient(#5a7172a6, #192f31c2);
 }
 
 .main-container {
@@ -58,7 +58,6 @@ position: relative;
     transition: 0.5s;
 }
 .card:hover .card-content a{
-font-size: 17px;
 color: rgb(245, 245, 245);
 padding-left: 0px;
 }

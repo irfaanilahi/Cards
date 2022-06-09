@@ -1,0 +1,124 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: radial-gradient(#70293d78, #002031);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 300px;
+}
+
+/* Card Styles */
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card .card-image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: 0.3s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.25);
+}
+
+.card ul {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0.8;
+    transform: translateX(50px);
+    transition: 0.3s ease;
+}
+
+.card:hover ul {
+    transform: translateX(0);
+}
+
+.card ul li {
+    list-style: none;
+    background-color: white;
+    padding: 4px 0;
+}
+
+.card ul li:hover {
+    background: radial-gradient(#fff, #528c9a);
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 4px 14px;
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(hsl(0 0% 0% /0), hsl(20 0% 0% /0.5) 60%, hsl(0 0% 0% /0.7));
+    transform: translateY(118px);
+    transition: 0.3s ease;
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+}
+
+.card .card-content .card-text {
+    color: white;
+    padding: 16px 16px 20px 16px;
+}
+
+.card .card-content .card-text h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.card .card-content .card-text p {
+    font-size: 12px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.card .card-content .card-text a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 24px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: 0.2s ease;
+}
+
+.card .card-content .card-text a:hover {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}

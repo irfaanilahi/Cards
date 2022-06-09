@@ -1,0 +1,253 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: radial-gradient(#b5afaf, #0a131dc7);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 300px;
+    height: auto;
+}
+
+/* Card Styles */
+
+/* .card{
+    overflow: hidden;
+    background: radial-gradient(#266b72, #002031);
+    border-radius: 10px;
+}
+.card .card-images{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 20px 10px;
+}
+.card .card-images h2{
+    text-align: center;
+    padding: 5px;
+    color: #081f33;
+}
+.card .card-images .html{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(-120%);
+    transition: transform 500ms ease;
+}
+.card:hover .card-images .html{
+    transform: translateX(0);
+}
+.card .card-images .html h6{
+    position: absolute;
+    left: 233px;
+    color: #e44d26;
+}
+.card .card-images .html img{
+    width: 70px;
+}
+.card .card-images .html::after{
+    content: "";
+    width: 160px;
+    height: 6px;
+    display: block;
+    background-color: #e44d26;
+    border-radius: 10px;
+}
+
+.card .card-images .css{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(-100%);
+    transition: transform 700ms ease;
+}
+.card:hover .card-images .css{
+    transform: translateX(0);
+}
+.card .card-images .css h6{
+    position: absolute;
+    left: 172px;
+    color: #379ad6;
+}
+.card .card-images .css img{
+    width: 70px;
+
+}
+.card .card-images .css::after{
+    content: "";
+    width: 100px;
+    height: 6px;
+    display: block;
+    background-color: #379ad6;
+    border-radius: 10px;
+}
+.card .card-images .git{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(-100%);
+    transition: transform 850ms ease;
+}
+.card:hover .card-images .git{
+    transform: translateX(0);
+}
+.card .card-images .git h6{
+    position: absolute;
+    left: 133px;
+    color: #000000;
+}
+.card .card-images .git img{
+    width: 70px;
+ 
+}
+.card .card-images .git::after{
+    content: "";
+    width: 60px;
+    height: 6px;
+    display: block;
+    background-color: #000000;
+    border-radius: 10px;
+} */
+
+.card {
+    overflow: hidden;
+    background: radial-gradient(#266b72, #002031);
+    border-radius: 10px;
+}
+
+.card .card-images {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 20px 10px;
+}
+
+.card .card-images h2 {
+    text-align: center;
+    padding: 5px;
+    color: #081f33;
+}
+
+.card .card-images .html {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card .card-images .html h6 {
+    position: absolute;
+    left: 233px;
+    color: #e44d26;
+    opacity: 0;
+    transition: all ease-in-out 0.7s;
+}
+.card:hover .card-images .html h6 {
+    opacity: 1;
+}
+
+
+.card .card-images .html img {
+    width: 70px;
+}
+
+.card .card-images .html::after {
+    content: "";
+    width: 0px;
+    height: 6px;
+    display: block;
+    background-color: #e44d26;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.card:hover .card-images .html::after {
+    width: 160px;
+}
+
+.card .card-images .css {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+}
+
+.card .card-images .css h6 {
+    position: absolute;
+    left: 172px;
+    color: #379ad6;
+    opacity: 0;
+    transition: all ease-in-out 0.8s;
+}
+.card:hover .card-images .css h6 {
+    opacity: 1;
+}
+
+.card .card-images .css img {
+    width: 70px;
+
+}
+
+.card .card-images .css::after {
+    content: "";
+    width: 0px;
+    height: 6px;
+    display: block;
+    background-color: #379ad6;
+    border-radius: 10px;
+    transition: all ease-in-out 0.6s;
+}
+.card:hover .card-images .css::after {
+    width: 100px;
+}
+
+.card .card-images .git {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card:hover .card-images .git {
+    transform: translateX(0);
+}
+
+.card .card-images .git h6 {
+    position: absolute;
+    left: 133px;
+    color: #000000;
+    opacity: 0;
+    transition: all ease-in-out 0.85s;
+}
+.card:hover .card-images .git h6 {
+    opacity: 1;
+}
+
+.card .card-images .git img {
+    width: 70px;
+
+}
+
+.card .card-images .git::after {
+    content: "";
+    width: 0px;
+    height: 6px;
+    display: block;
+    background-color: #000000;
+    border-radius: 10px;
+    transition: all ease-in-out 0.65s;
+}
+.card:hover .card-images .git::after {
+    width: 60px;
+}

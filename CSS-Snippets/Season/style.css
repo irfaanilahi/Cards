@@ -68,7 +68,7 @@ html, body {
     display: block;
     background-color: #a05652;
     transform: scaleX(0);
-    transition: all ease 0.2s;
+    transition: all ease 0.3s;
     transform-origin: left;
 }
 

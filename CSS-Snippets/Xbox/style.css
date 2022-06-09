@@ -1,0 +1,89 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: radial-gradient(#96969678, #2a4343)
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 500px;
+    height: auto;
+}
+
+/* Card Styles */
+
+.card {
+    position: relative;
+}
+
+.card .card-image {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    z-index: 2;
+    transition: all ease-in-out 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card:hover .card-image{
+    transform: translate(40px, 20px);
+}
+
+.card .card-image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all ease-in-out 0.5s;
+}
+.card .card-content:hover .card-image img{
+    transform: scale(1.1);
+}
+
+.card .card-content {
+    background-color: white;
+    background-color: white;
+    max-width: 264px;
+    max-height: 200px;
+    padding: 18px;
+    position: absolute;
+    bottom: -100px;
+    left: 200px;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+    border-radius: 10px;
+    background: radial-gradient(#527a96bf, #1b242d);
+    backdrop-filter: blur(2px);
+}
+
+.card:hover .card-content{
+    z-index: 3;
+    transform: translate(-40px, -20px);
+}
+
+.card .card-content h2 {
+    text-align: center;
+    color: #113312;
+    text-shadow: 0 0 black;
+}
+
+.card .card-content p {
+    text-align: center;
+}
+
+.card .card-content p a {
+    text-decoration: none;
+    color: #232323;
+}

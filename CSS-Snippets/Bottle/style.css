@@ -1,0 +1,95 @@
+/* Card Template Styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: radial-gradient(#0000002e, #242424);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 300px;
+    height: auto;
+}
+
+.card {
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.card .card-image {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card .card-image img.first {
+    width: 100%;
+    transition: 0.4s;
+}
+.card:hover .card-image img.first{
+    transform: scale(1.09);
+}
+
+/* .card .card-image img.second {
+    width: 100%;
+    position: absolute;
+    transition: all ease-out 0.8s;
+} */
+
+/* .card:hover .card-image img.second {
+    transform: translateX(-378px) scaleX(-.5);
+} */
+
+.card .card-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(199 199 199);
+    width: -webkit-fill-available;
+    padding: 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.card .card-content span {
+    background-color: #1c1e1b;
+    color: white;
+    letter-spacing: 2px;
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+
+.card .card-content .card-button {
+    display: flex;
+    align-items: center;
+}
+
+.card .card-content .card-button p {
+    font-size: 13px;
+    padding: 1px 4px;
+    background-color: white;
+    margin: 0px  5px;
+    border-radius: 14px;
+}
+
+.card .card-content .card-button a {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: #1c1e1b;
+    border-radius: 20px;
+    padding: 2px 14px;
+    transition: 0.8s;
+}
