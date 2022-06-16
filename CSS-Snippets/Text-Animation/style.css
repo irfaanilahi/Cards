@@ -1,0 +1,85 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    --duration: 1s;
+    --total: calc(var(--duration) + var(--delay));
+    font-size: 1.5rem;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(92, 92, 92);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 200px;
+    height: auto;
+}
+
+/* //// */
+.text-animation {}
+
+.text-animation span {
+    display: block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    color: transparent;
+    font-weight: 500;
+    animation: revealText 2s var(--total) forwards;
+}
+
+.text-animation span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: rgb(37, 37, 37);
+    animation: rollin var(--duration) var(--delay) forwards, rollout var(--duration) var(--total) forwards;
+}
+
+.text-animation span:nth-child(2)::after {
+    border-top: 2px solid rgb(92, 92, 92);
+}
+
+@keyframes revealText {
+    to {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+}
+
+@keyframes rollin {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes rollout {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(105%);
+    }
+}

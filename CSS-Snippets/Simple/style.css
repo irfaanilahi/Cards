@@ -1,0 +1,76 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: radial-gradient(#ffffff78, #6e5a6e);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 300px;
+    height: auto;
+}
+
+/* Card Styles */
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.card .card-content {
+    padding: 40px;
+}
+
+.card .card-content a {
+    text-decoration: none;
+}
+.card .card-content a p{
+
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #cb00ff;
+    font-weight: 600;
+}
+
+.card .card-content .muted-text {
+    margin-bottom: 20px;
+    color: #939393;
+    font-size: 12px;
+}
+.card .card-content .card-detail{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.card .card-content .card-detail .card-image {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 7px 10px -7px #cb00ff;
+}
+
+.card .card-content .card-image img {
+    width: 100%;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.card .card-content .card-detail .name{
+font-size: 11px;
+padding-left: 10px;
+color: #cb00ff;
+}

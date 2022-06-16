@@ -35,18 +35,18 @@ body {
     max-height: 300px;
     position: relative;
     z-index: 2;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
     overflow: hidden;
     border-radius: 10px;
 }
 .card:hover .card-image{
-    transform: translate(40px, 20px);
+    transform: translate(60px, 20px);
 }
 
 .card .card-image img {
     width: 100%;
     vertical-align: middle;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 .card .card-content:hover .card-image img{
     transform: scale(1.1);
@@ -62,7 +62,7 @@ body {
     bottom: -100px;
     left: 200px;
     z-index: 1;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
     border-radius: 10px;
     background: radial-gradient(#527a96bf, #1b242d);
     backdrop-filter: blur(2px);
@@ -70,7 +70,7 @@ body {
 
 .card:hover .card-content{
     z-index: 3;
-    transform: translate(-40px, -20px);
+    transform: translate(-60px, -20px);
 }
 
 .card .card-content h2 {
