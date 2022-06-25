@@ -1,0 +1,87 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    background: radial-gradient(#ffffff7a, #ffffff);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main-container > .card-container{
+    width: 350px;
+    height: auto;
+}
+
+/* Card Styles */
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card .card-background{
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 225px;
+    transition: .3s all ease-in-out;
+
+}
+.card:hover .card-background{
+    background-position: 40px;
+}
+
+.card-content{
+    background: radial-gradient(#486275, #254e6a);
+    width: 110px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding: 8px;
+    transform: translateX(-130px);
+    transition: .3s all ease-in-out;
+}
+.card-content h3{
+    color: #e4f3ff;
+    padding: 10px;
+}
+.card-content p{
+    font-size: 10px;
+    color: #e7ca1b;
+}
+.card:hover .card-content{
+    transform: translateX(0);
+}
+.card .card-content .content-detail{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 35px;
+    justify-content: space-between;
+}
+.card .card-content .content-detail .content-image{
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.card .card-content .content-detail .content-image img{
+    width: 100%;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.card-content .content-detail span{
+    font-size: 8px;
+    color: #e4f3ff;
+    padding-left: 5px;
+}

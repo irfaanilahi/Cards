@@ -1,0 +1,80 @@
+/* Card Template Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: radial-gradient(#85999f7a, #314d60);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container>.card-container {
+    width: 300px;
+}
+
+/* Card Styles */
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.card .card-image{
+
+}
+
+.card .card-image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: 0.3s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.2);
+}
+
+.card .card-content{
+position: absolute;
+top: 0;
+width: 100%;
+transition: 0.3s ease;
+}
+.card .card-content h2{
+    mix-blend-mode: screen;
+    background: linear-gradient(rgb(255, 255, 255, .2), rgb(255, 255, 255, .8) 50%, rgb(255, 255, 255, .8));
+    /* background: linear-gradient(0deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(255,255,255,0) 83%, rgba(255,255,255,0) 100%); */
+    font-size: 97px;
+    letter-spacing: -8px;
+    padding: 115px 0;
+    transition: .3s ease;
+}
+.card:hover .card-content {
+    top: 255px;
+}
+.card:hover .card-content h2{
+    font-size: 30px;
+    padding: 0px 0px 80px 5px;
+    letter-spacing: 0px;
+    /* background-color: rgba(255, 255, 255, 0.45); */
+}
+.card:hover .card-content p{
+    transition: .3s;
+    padding: 5px;
+    font-size: 14px;
+    transform: translateY(0px);
+}
+.card:hover .card-content p{
+        transform: translateY(-83px);
+}
